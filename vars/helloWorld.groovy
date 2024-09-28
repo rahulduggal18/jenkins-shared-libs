@@ -4,11 +4,11 @@
 //def call() {
 //    powershell ' Write-Host "Hello" '
 //}
-def me(String name) {
+def call(Map config = [:]) {
    // powershell ' dir env: '
     powershell """
     
-    Write-Host  Hello  "$name"
+    Write-Host  Hello  "${config.name}"
     
     """
     //sh ' echo Hello ${name} '
