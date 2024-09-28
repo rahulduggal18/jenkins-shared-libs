@@ -4,7 +4,7 @@
 //def call() {
 //    powershell ' Write-Host "Hello" '
 //}
-def call(String name) {
+def me(String name) {
    // powershell ' dir env: '
     powershell """
     
