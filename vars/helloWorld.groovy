@@ -5,5 +5,5 @@
 //    powershell ' Write-Host "Hello" '
 //}
 def call(String name) {
-    powershell ' Write-Host "Hello ${name}" '
+    powershell ' Write-Host "Hello ${name} or $name" '
 }
