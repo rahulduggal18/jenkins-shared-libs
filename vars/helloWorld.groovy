@@ -6,6 +6,6 @@
 //}
 def call(String name) {
     println(name)
-    powershell ' Write-Host "Hello \${name} or ${params.name}" '
+    powershell ' Write-Host "Hello ${env:name}" '
     //sh ' echo Hello ${name} '
 }
