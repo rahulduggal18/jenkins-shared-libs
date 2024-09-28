@@ -6,6 +6,12 @@
 //}
 def call(String name) {
     powershell ' dir env: '
-    powershell " Write-Host " "$name" " "
+    powershell """
+    
+    echo "$name"
+    \$var = "$name"
+    echo $var
+    
+    """
     //sh ' echo Hello ${name} '
 }
