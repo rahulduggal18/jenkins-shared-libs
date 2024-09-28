@@ -8,7 +8,7 @@ def call(String name) {
    // powershell ' dir env: '
     powershell """
     
-    Write-Host  "Hello" + "$name"
+    Write-Host  "Hello"  "$name"
     
     """
     //sh ' echo Hello ${name} '
