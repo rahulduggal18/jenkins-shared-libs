@@ -5,12 +5,11 @@
 //    powershell ' Write-Host "Hello" '
 //}
 def call(String name) {
-    powershell ' dir env: '
+   // powershell ' dir env: '
     powershell """
     
-    echo "$name"
-    \$var = "$name"
-    echo $var
+    Write-Host "$name"
+    Write-Host "\$name"
     
     """
     //sh ' echo Hello ${name} '
